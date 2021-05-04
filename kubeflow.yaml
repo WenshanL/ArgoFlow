@@ -4,7 +4,7 @@ metadata:
   name: kubeflow
   namespace: argocd
 spec:
-  project: kubeflow
+  project: default
   source:
     repoURL: https://github.com/WenshanL/ArgoFlow
     targetRevision: multi-targets
