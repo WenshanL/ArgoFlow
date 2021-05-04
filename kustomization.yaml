@@ -45,6 +45,6 @@ resources:
 # - argocd-applications/kiali.yaml
 
 # assign new target cluster
-patchesStrategicMerge:
-- ./target.yaml
+# patchesStrategicMerge:
+# - ./target.yaml
 
