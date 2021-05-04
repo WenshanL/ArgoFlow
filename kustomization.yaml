@@ -7,7 +7,7 @@ resources:
 # - argocd-applications/rook-ceph.yaml
 # - argocd-applications/nginx.yaml
 # - argocd-applications/nvidia-gpu-operator.yaml
-- argocd-applications/argocd.yaml
+# - argocd-applications/argocd.yaml
 - argocd-applications/istio.yaml
 # to use upstream istio comment out line above
 # and uncomment the next two line
@@ -43,3 +43,8 @@ resources:
 # - argocd-applications/kube-prometheus-stack.yaml
 # - argocd-applications/loki-stack.yaml
 # - argocd-applications/kiali.yaml
+
+# assign new target cluster
+patchesStrategicMerge:
+- ./target.yaml
+
